@@ -1,10 +1,14 @@
-TOKEN = "OTYzOTE0OTk4ODAxOTIwMDEx.YldBzA.AhMF94_WqVUReA90Q7thY4-Vr90"
-
 # MAKE A DISCORD BOT
 import discord
 import random
 import datetime
 from discord.ext import commands
+
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
 
 client = discord.Client()
 
